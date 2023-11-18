@@ -14,6 +14,7 @@ body{
     --purple:#944AFF;
     --white:#fff;
     --dark:#1b1b1b;
+    --azul:#04001D;
 }
 body{
     color:var(--white);
@@ -24,9 +25,8 @@ body{
     align-items:center;
     justify-content:space-between;
     border-bottom:solid 0.1px gray;
-    padding:18px 40px;
+    padding:30px 40px;
     width: 100%;
-    background-color: var(--dark);
     transition: all 0.5s;
     position:fixed;
 }
@@ -64,6 +64,7 @@ body{
     display:flex;
     align-items: center;
     justify-content:space-around;
+    background-color:var(--azul)
 }
 .home-text{
     max-width:35rem;
@@ -105,7 +106,41 @@ body{
     }
 }
 .sobre{
-    background-color: var(--white);
+    background-image: linear-gradient(-180deg, var(--azul) 10%,
+    var(--purple) 100%);
     width: 100vw;
     height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+.sobre-text{
+    height: 500px;
+    width:500px;
+    background-color: var(--purple);
+}
+.sobre-img{
+    height: 500px;
+    width:500px;
+    background-color: var(--dark);
+}
+.conteiner-pai{
+    display:flex;
+    flex-wrap:wrap;
+    padding:3rem;
+    gap:10px
+}
+.filho{
+    height:8rem;
+    width: 12rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+    border-radius:0.8rem;
+}
+.filho h1{
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+.filho p{
+    font-size:0.9rem;
 }
