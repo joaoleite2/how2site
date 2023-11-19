@@ -11,12 +11,12 @@
 <body>
     <header>
         <nav class="navigation">
-            <a href="#" class="logo"><img src="img/logosvg.svg"></a>
+            <a href="#home" class="logo"><img src="img/logosvg.svg"></a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Início</a></li>
-                <li class="nav-item"><a href="#">Sobre</a></li>
-                <li class="nav-item"><a href="#">Aplicativo</a></li>
-                <li class="nav-item"><a href="#">Contato</a></li>
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#about">Sobre</a></li>
+                <li class="nav-item"><a href="#app">Aplicativo</a></li>
+                <li class="nav-item"><a href="#contact">Contato</a></li>
             </ul>
             <div class="menu">
                 <span class="bar"></span>
@@ -26,7 +26,7 @@
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="home-text">
                 <h4 class="text-h4">Seja bem vindo ao How2?</h4>
                 <h1 class="text-h1">Sua profissão em um só caminho!</h1>
@@ -35,27 +35,41 @@
             </div>
             <div class ="home-img">
                 <img src="img/imghome.png"/>
+                <img src="img/astronauta.svg" id="astronauta">
             </div>
         </section>
-        <section class="sobre">
+        <section class="sobre" id="about">
             <div class="sobre-text">
-                <h4>Para que serve o How2?</h4>
+                <h1>Para que serve o How2?</h1>
                 <p>O How2 tem o objetivo de ajudar nossos jovens a escolherem suas futuras profissões por meio 
-                de troca de experiências de profissional para jovem.</p>
+                de troca de experiências de profissional para jovem. Já que é nítido a presença de diversos tipos de 
+                problemas que dificultam essa jornada do jovem.</p>
                 <div class="conteiner-pai">
                     <div class="filho">
-                        <h1>86% <span>dos jovens</span></h1>
+                        <h1>82% <span>dos jovens</span></h1>
                         <p>Não sabem ou são indecisos sobre qual carreira seguir.</p>
                     </div>
-                    <div class="filho"></div>
-                    <div class="filho"></div>
-                    <div class="filho"></div>
+                    <div class="filho">
+                        <h1>30% <span>dos vestibulando</span></h1>
+                        <p>Ainda não escolheram qual profissão querem exercer no futuro</p>
+                    </div>
+                    <div class="filho">
+                        <h1>Crise dos 25 anos</h1>
+                        <p>Crise de incerteza profissional em pessoas de 25 a 33 anos</p>
+                    </div>
+                    <div class="filho">
+                        <h1>Influência dos pais</h1>
+                        <p>Pais reservados estão cada vez mais forçando as opçoes dos filhos.</p>
+                    </div>
                 </div>
             </div>
             <div class="sobre-img">
-
+                <img src="img/grafico.svg">
             </div>
         </section>
     </main>
+
+
+    <script src="script/script.js"></script>
 </body>
 </html>
