@@ -1,3 +1,8 @@
+body{
+    color:var(--white);
+    background:var(--dark);
+    overflow-x: hidden;
+}
 ::-webkit-scrollbar{
     width:12px;
 }
@@ -6,9 +11,6 @@
     border-radius:6px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat+Alternates&family=Roboto&family=Ubuntu:wght@300&display=swap');
-body{
-    overflow-x:hidden;
-}
 *{
     margin:0;
     padding:0;
@@ -23,21 +25,17 @@ body{
     --dark:#1b1b1b;
     --azul:#04001D;
 }
-body{
-    color:var(--white);
-    background:var(--dark)
-}
 .navigation{
     display:flex;
     align-items:center;
     justify-content:space-between;
     border-bottom:solid 0.1px gray;
-    padding:30px 40px;
+    padding:30px 150px;
     width: 100%;
     transition: all 0.5s;
     position:fixed;
     background-color: var(--azul);
-    z-index:1;
+    z-index:2;
 }
 .navigation ul{
     display: flex;
@@ -72,9 +70,9 @@ body{
     width:100vw;
     display:flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
     background-color:var(--azul);
-    flex-wrap:wrap;
+    padding:150px;
 }
 .home-text{
     max-width:35rem;
@@ -174,63 +172,70 @@ body{
 .filho p{
     font-size:0.9rem;
 }
-@media(max-width:785px){
+@media (max-width:450px){
+    /* nav */
     .navigation{
-        padding:18px 20px;
+        padding:20px 18px;
+    }
+    .navigation ul{
+        display: none;
     }
     .menu{
-        display:block;
+        display: block;
     }
-    /* transformando os filhos do menu hambúrguer em um x quando for clicado*/
-    .menu.ativo .bar:nth-child(1){
-        transform:translateY(8px) rotate(45deg);
-    }
-    .menu.ativo .bar:nth-child(2){
-        opacity:0;
-    }
-    .menu.ativo .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu{
-        position:fixed;
-        right:-100%;
-        top:70px;
-        width:20%;
-        height:50%;
-        border-radius:14px;
-        flex-direction:column;
-        gap:-10px;
-        align-items: center;
-        background-color:var(--purple);
-        color:var(--azul);
-        transition:0.3s;
-        justify-content:center;
-        filter:blur(0px);
-    }
-    .nav-menu.ativo{
-        right:10px
-    }
+    /* home */
     .home{
+        padding:120px 5%;
         flex-direction:column;
-        text-align:center;
-        padding-top:100px;
-        flex-wrap:nowrap;
+        text-align: center;
+        gap:20px
     }
-    /*depois dar uma pesquisada se afastar as seções desse jeito
-    é correto*/
     .home-text{
-        margin-top:6rem;
+        padding: 15px;;
+    }    
+    .text-h4{
+        font-size: 1.4rem;
+    }
+    .home p{
+        font-size:1.2rem;
     }
     .home-img{
-        margin-top:4rem;
+        width: 100%;
+        z-index:0;
     }
+    #astronauta{
+        left:5%;
+        width: 15%;
+    }
+    /* sobre */
     .sobre{
-        flex-direction:column;
-        padding-top:500px;
-        align-items:center;
-        flex-wrap:nowrap;
+        padding:120px 0;
+        justify-content: center;
+        height: auto;
+    }
+    #sobre-text-h1{
+        padding:0 8%;
     }
     #sobre-p{
         font-size:1.2rem;
+        padding: 0 10%;
+    }
+    .filho p{
+        font-size:1.2rem;
+    }
+    .conteiner-pai{
+        width: 100vw;
+        height:auto;
+        justify-content: center;
+        gap:20px;
+    }
+    .filho{
+        width: 90%;
+    }
+    .sobre-img{
+        width: 400px;
+    }
+    .sobre-img img{
+        width: 100%;
     }
 }

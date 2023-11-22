@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll('.navigation a[href^="#"]');
+//const navLinks = document.querySelectorAll('.navigation a[href^="#"]');
 const menu = document.querySelector('.menu')//pegando o menu hambúrguer
 const navMenu = document.querySelector('.nav-menu')//nav-menu é o nav normal sem considerar o hambúguer
 
@@ -9,19 +9,19 @@ menu.addEventListener('click', ()=>{
 
 
 
-function scrollToSection(event) {
-    event.preventDefault();
+// function scrollToSection(event) {
+//     event.preventDefault();
 
-    const targetId = this.getAttribute("href");
-    const targetSection = document.querySelector(targetId);
+//     const targetId = this.getAttribute("href");
+//     const targetSection = document.querySelector(targetId);
 
-    if (targetSection) {
-        targetSection.scrollIntoView({
-            behavior: "smooth"
-        });
-    }
-}
+//     if (targetSection) {
+//         targetSection.scrollIntoView({
+//             behavior: "smooth"
+//         });
+//     }
+// }
 
-navLinks.forEach((link) => {
-    link.addEventListener("click", scrollToSection);
-});
+// navLinks.forEach((link) => {
+//     link.addEventListener("click", scrollToSection);
+// });
