@@ -188,10 +188,10 @@ body{
         padding:120px 5%;
         flex-direction:column;
         text-align: center;
-        gap:20px
+        gap:20px;
     }
     .home-text{
-        padding: 15px;;
+        padding: 15px;
     }    
     .text-h4{
         font-size: 1.4rem;
@@ -238,4 +238,103 @@ body{
     .sobre-img img{
         width: 100%;
     }
+
+}
+
+.contato{
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    gap:50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contato-text{
+    flex:1;
+    padding:120px 10%;
+    flex-direction:column;
+    margin-left: 50px;
+}
+
+.contato-text-h1{
+    font-size:3rem;
+    margin-bottom:1rem;
+    width: 20rem;
+    padding-left:1rem;
+    border-left:solid .8rem var(--purple);
+    
+}
+
+.contato-title{
+    margin-top: 6px;
+    
+}
+
+
+.contato-lista{
+    flex:1;
+}
+
+
+.nome{
+    margin-left: 20px;
+    width: 20vw;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(223, 221, 221);
+}
+
+.email{
+    margin-left:20px;
+    width: 20vw;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(223, 221, 221);
+}
+
+.mensagem{
+   margin-left: 20px;
+   width: 20vw;
+   height: 70px;
+   border-radius: 5px;
+   border: none;
+   background-color:rgb(223, 221, 221);
+}
+
+.botao-submit{
+    width: 65px;
+    height: 35px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to bottom, #8e44ad, #b434db);
+    color: white;
+    cursor: pointer;
+}
+
+.botao-submit:hover{
+ background: linear-gradient(to bottom, #6f3488, #7d1f99);
+}
+
+label{
+    font-size: 18px;
+}
+
+input{
+    margin-top: 6px;
+}
+
+.instagram-icon{
+    width:20px;
+    height:20px;
+    border-radius:5px;
+ 
+}
+
+.legenda{
+    font-size: 18px;
 }
