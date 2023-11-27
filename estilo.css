@@ -147,9 +147,7 @@ body{
 }
 .sobre-img{
     /*MEXER NISSO AQUI DAQUI A POUCO JOÃO HENRIQUE
-    PARA FAZER COM Q A IMAGEM NÃO QUEBRE
-    k
-    k*/
+    PARA FAZER COM Q A IMAGEM NÃO QUEBRE*/
 }
 .conteiner-pai{
     display:flex;
@@ -172,75 +170,15 @@ body{
 .filho p{
     font-size:0.9rem;
 }
-@media (max-width:450px){
-    /* nav */
-    .navigation{
-        padding:20px 18px;
-    }
-    .navigation ul{
-        display: none;
-    }
-    .menu{
-        display: block;
-    }
-    /* home */
-    .home{
-        padding:120px 5%;
-        flex-direction:column;
-        text-align: center;
-        gap:20px;
-    }
-    .home-text{
-        padding: 15px;
-    }    
-    .text-h4{
-        font-size: 1.4rem;
-    }
-    .home p{
-        font-size:1.2rem;
-    }
-    .home-img{
-        width: 100%;
-        z-index:0;
-    }
-    #astronauta{
-        left:5%;
-        width: 15%;
-    }
-    /* sobre */
-    .sobre{
-        padding:120px 0;
-        justify-content: center;
-        height: auto;
-    }
-    #sobre-text-h1{
-        padding:0 8%;
-    }
-    #sobre-p{
-        font-size:1.2rem;
-        padding: 0 10%;
-    }
-    .filho p{
-        font-size:1.2rem;
-    }
-    .conteiner-pai{
-        width: 100vw;
-        height:auto;
-        justify-content: center;
-        gap:20px;
-    }
-    .filho{
-        width: 90%;
-    }
-    .sobre-img{
-        width: 400px;
-    }
-    .sobre-img img{
-        width: 100%;
-    }
-
+.solucao-text{
+    max-width:35rem;
 }
-
+#solucao-h1{
+    font-size:3rem;
+    margin-bottom:1rem;
+    padding-left:1rem;
+    border-left:solid .8rem var(--purple);
+}
 .contato{
     width: 60vw;
     height: 60vh;
@@ -276,8 +214,6 @@ body{
 .contato-lista{
     flex:1;
 }
-
-
 .nome{
     margin-left: 20px;
     width: 20vw;
@@ -338,3 +274,131 @@ input{
 .legenda{
     font-size: 18px;
 }
+@media (max-width:450px){
+    /* nav */
+    .navigation{
+        padding:18px 20px;
+    }
+    .menu{
+        display:block;
+    }
+    /* transformando os filhos do menu hambúrguer em um x quando for clicado*/
+    .menu.ativo .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2){
+        opacity:0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position:fixed;
+        right:-100%;
+        top:70px;
+        width:30%;
+        height:50%;
+        flex-direction:column;
+        gap:10px;
+        align-items: center;
+        background-color:rgba(148, 74, 255);
+        transition:0.3s;
+        justify-content:center;
+        border-radius: 5px;
+    }
+    .nav-item{
+        margin:16px 0
+    }
+    .nav-menu.ativo{
+        right:0
+    }
+    .navigation ul li a:hover{
+        color:#acacac;
+    }
+    /* home */
+    .home{
+        padding:120px 5%;
+        flex-direction:column;
+        text-align: center;
+        gap:20px;
+    }
+    .home-text{
+        padding: 15px;
+    }    
+    .text-h4{
+        font-size: 1.4rem;
+    }
+    .home p{
+        font-size:1.2rem;
+    }
+    .home-img{
+        width: 100%;
+        z-index:0;
+    }
+    #astronauta{
+        left:5%;
+        width: 15%;
+    }
+    /* sobre */
+    .sobre{
+        padding:120px 0;
+        justify-content: center;
+        height: auto;
+    }
+    #sobre-text-h1{
+        padding:0 8%;
+    }
+    #sobre-p{
+        font-size:1.2rem;
+        padding: 0 10%;
+    }
+    .filho p{
+        font-size:1.2rem;
+    }
+    .conteiner-pai{
+        width: 100vw;
+        height:auto;
+        justify-content: center;
+        gap:20px;
+    }
+    .filho{
+        width: 90%;
+    }
+    .sobre-img{
+        width: 400px;
+        padding:50px
+    }
+    .sobre-img img{
+        width: 100%;
+    }
+    .sobre-solucao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .solucao-text{
+        justify-content: center;
+        align-items: center;
+        padding:0 10%;
+    }
+    #solucao-h1{
+        padding:0 8%;
+        margin-bottom:2rem;
+    }
+    #solucao-p{
+        font-size:1.2rem;
+        margin-bottom:4rem;
+    }
+    #a-solucao{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+        0 10px 10px rgba(0,0,0,0.22);
+    }
+    .solucao-img{
+        margin-top:6rem;
+        width: 90%;
+    }
+    .solucao-img img{
+        width: 100%;
+    }
+}
+

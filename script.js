@@ -6,22 +6,3 @@ menu.addEventListener('click', ()=>{
     menu.classList.toggle('ativo')
     navMenu.classList.toggle('ativo')
 })
-
-
-
-// function scrollToSection(event) {
-//     event.preventDefault();
-
-//     const targetId = this.getAttribute("href");
-//     const targetSection = document.querySelector(targetId);
-
-//     if (targetSection) {
-//         targetSection.scrollIntoView({
-//             behavior: "smooth"
-//         });
-//     }
-// }
-
-// navLinks.forEach((link) => {
-//     link.addEventListener("click", scrollToSection);
-// });
