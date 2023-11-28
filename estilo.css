@@ -313,7 +313,10 @@ input{
         right:0
     }
     .navigation ul li a:hover{
-        color:#acacac;
+        color:#c67ac1;
+        background-color: #fff;
+        border-radius:4px;
+        padding: 8px;
     }
     /* home */
     .home{
